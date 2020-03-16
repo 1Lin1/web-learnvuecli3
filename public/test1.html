@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+  let p = new Promise((resolve,reject) => {
+    resolve('成功啦');
+    reject('失败了');
+  })
+  
+  let getData = async ()=>{
+    let a = await  p;
+    console.log('哈哈');
+    return a;
+  }
+  
+  getData().then(res =>{
+    console.log(res);
+  }).catch(e => {
+    console.log(e);
+  })
+</script>
+</html>

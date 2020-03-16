@@ -376,6 +376,9 @@ template {
 
 ul, li { list-style: none; }
 
-h1{
-  color: red;
+a {
+  text-decoration: none;
+  color: #999999;
+  margin:0;
+  padding: 0;
 }
